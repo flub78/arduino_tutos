@@ -6,7 +6,7 @@
 
 #include "Morse.h"
 
-Morse morse(11);
+Morse morse(13);
 
 void setup()
 {
