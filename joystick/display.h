@@ -10,7 +10,13 @@
 class Display
 {
   public:
+    /**
+		Constructor
+	*/
     Display();
+	/**
+		Display the current value of three integer values
+	*/
     void dashboard(int ailerons, int profondeur, int alterna);
 };
 

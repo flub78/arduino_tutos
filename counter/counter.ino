@@ -2,7 +2,7 @@
    Un Hello world Ardino
 
    Clignotement de la diode 13
-   et affiche quelques traces sur le moniteur série
+   et affiche la valeur d'un compteur sur la console
 */
 
 const int LED = 13;

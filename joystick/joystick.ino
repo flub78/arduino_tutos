@@ -1,10 +1,13 @@
 /**
    Gestion d'un potentiometre double 
+   
+   This project uses several classes.
+   
 */
 #include "const.h"
 #include "Clignoteur.h"
 #include "Display.h"
-
+																									
 Clignoteur blue(BLUE_LED, 100);
 Clignoteur green(GREEN_LED, 100);
 

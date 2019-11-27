@@ -4,13 +4,13 @@
 #ifndef Const_h
 #define Const_h
 
-// les num�ros de broche (pin)
+// les numéros de broche (pin)
 
-const int BLUE_LED = 4;
-const int RED_LED = 2;
-const int GREEN_LED = 3;
+const int BLUE_LED = 24;
+const int RED_LED = 23;
+const int GREEN_LED = 22;
 
 // la broche du bouton
-const int BUTTON = 7;
+const int BUTTON = 8;
 
 #endif
