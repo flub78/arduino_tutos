@@ -13,7 +13,7 @@ const int RED = 11;
 
 int cnt = 0;
 int on = 0;
-const int DELAY = 5000;
+const int DELAY = 2000;
 
 ColorLight light1(RED, ORANGE, GREEN);
 
@@ -47,13 +47,13 @@ void loop() {
   Serial.println(cnt++);
 
   on = (on + 1) % 2;
-
-  if ((cnt % 3) == 0) {
+  
+  if ((cnt % 10) > 8) {
     orange();
-  } else if ((cnt % 3) == 1) {
-    red();
-  } else {
+  } else if ((cnt % 10) > 4) {
     green();
+  } else {
+    red();
   }
 
   delay(DELAY);                  // stopping the program for 1000 milliseconds

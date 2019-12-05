@@ -1,0 +1,36 @@
+@startuml
+
+state Display {
+  DisplayDate -> Display2 : Mode
+
+  Display2 -> Display3 : Mode
+
+  Display3 -> DisplayDate : Mode
+}
+
+Display : display time
+Display : and date
+
+
+
+
+state Setting {
+	SettingDay -> SettingMonth : Mode
+	SettingDay -> SettingDay : up
+	SettingDay -> SettingDay : down
+	
+	SettingMonth -> SettingYear : Mode
+	SettingMonth -> SettingMonth : up
+	SettingMonth -> SettingMonth : down
+	
+}
+
+[*] --> Display
+Display -> Ringing : Alarm
+Ringing -> Display : End of Alarm
+Display -down-> Setting : Mode long
+Setting -> Display : Clear
+
+
+
+@enduml
