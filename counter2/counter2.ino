@@ -25,5 +25,5 @@ void loop() {
   } else {
     digitalWrite(LED, LOW);       // switching off the led
   }
-  delay(2000);                  // stopping the program for 1000 milliseconds
+  delay(1000);                  // stopping the program for 1000 milliseconds
 }
